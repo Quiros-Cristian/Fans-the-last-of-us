@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 125vh;
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url("../assets/fonts/bebas_neue/BebasNeue-Regular.otf");
+}
+
+/* ESTILOS INDEX */
+
+#bodyIndex {
+    height: 125vh;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+
+
+.pindex {
+    grid-area: parrafo;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    text-align: start;
+    color: white;
+}
+
+#imgJoelellie {
+    grid-area: imagenjoelyellie;
+}
+
+.iframeIndex {
+    grid-area: video;
+}
+
+#imgAuto {
+    grid-area: imagenauto;
+}
+
+
+
+#mainIndex {
+    grid-area: main;
+    height: 100vh;
+    display: grid;
+    grid-template-rows:repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "parrafo parrafo parrafo parrafo"
+    "imagenjoelyellie video video imagenauto"
+    ". . . ."
+    ;
+    background-image: url(../assets/img/7e2abd9e6342b2dfe3ab905cf1d6b9ef.jpg);
+    background-position: center;
+}
+
+
+
+
+
+
+/* ESTILOS CABECERA */
+
+.header {
+    background-color: #0D0D0D;
+    grid-area: header;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.logo {
+    font-family: BebasNeue;
+    margin-left: 20px;
+    font-size: 1.6rem;
+    flex-grow: 1;
+    width: 50%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+.nav-menu {
+    flex-grow: 3;
+    width: 50%;
+}
+
+.nav-menu ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+
+/* ESTILOS PRINCIPALES */
+
+main {
+    height: 110vh;
+    background-image: url(../assets/img/7e2abd9e6342b2dfe3ab905cf1d6b9ef.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainPersonajes {
+    position: relative;
+    font-size: 0;
+    height: 131vh;
+}
+
+#mainContacto {
+    color: white;
+    background-image: url(../assets/img/thumb-1920-532407.jpg);
+    background-position: center;
+}
+
+
+#imgIndex {
+    position: absolute;
+    padding: 100px 0px 100px 0px;
+}
+
+#parrafoIndex {
+    padding: 30px 0px 30px 0px;
+    color: white;
+}
+
+#personajeJoel {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-size: 1rem;
+    width: 20%;
+}
+
+#personajeEllie {
+    display: inline-block;
+    position: absolute;
+    width: 20%;
+    left: 0;
+    padding: 10px 10px 0px 0px;
+    bottom: 0;
+    font-size: 1rem;
+}
+
+#infoJoel {
+    color: white;
+    width: 80%;
+    padding: 30px 10px 0px 10px;
+    font-size:1.2rem;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#infoEllie {
+    color: white;
+    width: 80%;
+    right: 0;
+    position: absolute;
+    bottom: 310px;
+    font-size:1.2rem;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.parrafoSerie {
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#parrafoHistoria {
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* ESTILOS PIE DE PAGINA */
+
+#footer {
+    position: relative;
+    grid-area: footer;
+    background-color: #0D0D0D;
+    height: 10vh;
+}
+
+#footer h2 {
+    text-align: center;
+    color: white;
+}
+
+.contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.contacto li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+.imgInstagram {
+    position: absolute;
+    left: 125px;
+    top: 27px;
+}
+
+.imgFacebook {
+    position: absolute;
+    right: 270px;
+    top: 25px;
+}
+
+.imgMail {
+    position: absolute;
+    left: 535px;
+    top: 27px;
+}
+
+
