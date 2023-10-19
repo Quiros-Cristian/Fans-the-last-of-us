@@ -5,6 +5,10 @@
 
 body {
     height: 125vh;
+    background-image: url(../assets/img/7e2abd9e6342b2dfe3ab905cf1d6b9ef.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
 }
 
 @font-face {
@@ -14,62 +18,30 @@ body {
 
 /* ESTILOS INDEX */
 
-#bodyIndex {
-    height: 125vh;
-    display: grid;
-    grid-template-rows: repeat(4,1fr);
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-
-
 .pindex {
     grid-area: parrafo;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 10px;
     font-size: 1.2rem;
     text-align: start;
     color: white;
 }
 
-#imgJoelellie {
-    grid-area: imagenjoelyellie;
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
 }
 
-.iframeIndex {
-    grid-area: video;
+.img-index {
+    width: 370px;
+    height: 300px;
 }
-
-#imgAuto {
-    grid-area: imagenauto;
-}
-
 
 
 #mainIndex {
-    grid-area: main;
-    height: 100vh;
-    display: grid;
-    grid-template-rows:repeat(3,1fr);
-    grid-template-columns: repeat(4,1fr);
-    grid-template-areas: 
-    "parrafo parrafo parrafo parrafo"
-    "imagenjoelyellie video video imagenauto"
-    ". . . ."
-    ;
-    background-image: url(../assets/img/7e2abd9e6342b2dfe3ab905cf1d6b9ef.jpg);
-    background-position: center;
+    height: 100%;
 }
-
-
-
-
-
 
 /* ESTILOS CABECERA */
 
@@ -79,54 +51,35 @@ body {
     height: 15vh;
     display: flex;
     flex-direction: row;
-    
+
 }
 
 .logo {
     font-family: BebasNeue;
-    margin-left: 20px;
-    font-size: 1.6rem;
-    flex-grow: 1;
-    width: 50%;
-    display: flex;
-    height: 100%;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    font-size: 3rem;
     color: white;
 }
 
-.nav-menu {
-    flex-grow: 3;
-    width: 50%;
+.color-div {
+    background-color: #0D0D0D;
+    height: 15vh;
 }
 
-.nav-menu ul {
-    height: 100%;
+.navbar {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
+    padding: 0%;
 }
 
-.nav-menu ul li a {
-    text-decoration: none;
+.nav-link {
     color: white;
-    font-size: 1.3rem;
 }
 
-
+.collapse {
+    justify-content: flex-end;
+}
 
 /* ESTILOS PRINCIPALES */
 
-main {
-    height: 110vh;
-    background-image: url(../assets/img/7e2abd9e6342b2dfe3ab905cf1d6b9ef.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
 #mainPersonajes {
     position: relative;
     font-size: 0;
@@ -137,12 +90,6 @@ main {
     color: white;
     background-image: url(../assets/img/thumb-1920-532407.jpg);
     background-position: center;
-}
-
-
-#imgIndex {
-    position: absolute;
-    padding: 100px 0px 100px 0px;
 }
 
 #parrafoIndex {
@@ -172,7 +119,7 @@ main {
     color: white;
     width: 80%;
     padding: 30px 10px 0px 10px;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     vertical-align: top;
     display: inline-block;
 }
@@ -183,7 +130,7 @@ main {
     right: 0;
     position: absolute;
     bottom: 310px;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     display: inline-block;
     margin-top: 50px;
 }
@@ -208,7 +155,7 @@ main {
     position: relative;
     grid-area: footer;
     background-color: #0D0D0D;
-    height: 10vh;
+    height: 15vh;
 }
 
 #footer h2 {
@@ -247,4 +194,11 @@ main {
     position: absolute;
     left: 535px;
     top: 27px;
+}
+
+@media screen and (max-width:1000px) {
+    .img-index {
+        flex-direction: column;
+        align-items: center;
+    }
 }
